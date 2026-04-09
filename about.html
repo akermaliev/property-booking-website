@@ -8,11 +8,11 @@
 </head>
 <body>
   <header>
-    <nav aria-label="Primary Navigation">
+    <nav class="navbar" aria-label="Primary Navigation">
       <div class="container">
         <ul class="nav-list">
           <li><a href="index.html">Home</a></li>
-          <li><a class="active" aria-current="page" href="about.html">About</a></li>
+          <li><a class="active" aria-current="page" href="about.html">About Us</a></li>
           <li><a href="charts.html">Charts</a></li>
           <li><a href="create.html">Create</a></li>
           <li><a href="read.html">Read</a></li>
@@ -24,19 +24,51 @@
     </nav>
   </header>
 
-  <main>
-    <div class="container">
-      <h1>About This Project</h1>
+  <main class="container">
+    <div class="card">
+      <h1>About Us</h1>
       <p>
-        This page is a placeholder for team information, project background, and the property
-        booking data model that will be documented in later steps.
+        StayEase Rentals is a property booking platform designed to simplify reservation
+        management and improve user experience.
       </p>
+      <p>
+        This project was developed as part of ISM 6225 to demonstrate how a full booking system
+        can be structured using modern web technologies.
+      </p>
+
+      <h3>Our Team</h3>
+      <div class="card">
+        <p><strong>Aitemir Kermaliev</strong> — Developer</p>
+        <p>
+          Responsible for designing and implementing the full system, including user interface,
+          data model, and interactive components.
+        </p>
+      </div>
+
+      <h3>Project Repository</h3>
+      <p>
+        <a href="https://github.com/akermaliev/property-booking-website" target="_blank" class="button">
+          View on GitHub
+        </a>
+      </p>
+
+      <h3>Logical Data Model</h3>
+      <p>
+        The system is built on a structured data model representing relationships between
+        properties, bookings, and customers. Key relationships include:
+      </p>
+      <ul>
+        <li>One property → many bookings</li>
+        <li>One customer → many bookings</li>
+      </ul>
+
+      <img src="images/data-model.png" alt="Data Model" class="data-model-image">
     </div>
   </main>
 
   <footer>
     <div class="container">
-      <p>&copy; 2026 Property Booking System</p>
+      <p>&copy; 2026 StayEase Rentals</p>
     </div>
   </footer>
 </body>
