@@ -26,11 +26,27 @@
 
   <main class="container">
     <div class="card">
-      <h1>Booking Charts</h1>
-      <p>
-        This page is reserved for data visualization components. Chart views and analytics will
-        be implemented in a future step.
-      </p>
+      <h2>Booking Analytics</h2>
+
+      <label for="timeFilter">Filter by Time:</label>
+      <select id="timeFilter">
+        <option value="6">Last 6 Months</option>
+        <option value="12" selected>Last 12 Months</option>
+      </select>
+
+      <div class="dashboard">
+        <div class="chart-full">
+          <canvas id="revenueChart"></canvas>
+        </div>
+
+        <div class="chart-half">
+          <canvas id="propertyChart"></canvas>
+        </div>
+
+        <div class="chart-half pie-container">
+          <canvas id="statusChart"></canvas>
+        </div>
+      </div>
     </div>
   </main>
 

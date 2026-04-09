@@ -27,10 +27,24 @@
   <main class="container">
     <div class="card">
       <h1>Create a Booking</h1>
-      <p>
-        This section will be used to add new booking records, including property details,
-        customer preferences, booking dates, and status.
-      </p>
+      <form id="bookingForm">
+        <input type="text" placeholder="Booking ID" id="id" required>
+        <input type="text" placeholder="Property Name" id="property" required>
+        <input type="text" placeholder="Location" id="location" required>
+        <input type="number" placeholder="Price" id="price" required>
+        <input type="date" id="date" required>
+
+        <select id="status">
+          <option>Confirmed</option>
+          <option>Pending</option>
+          <option>Cancelled</option>
+          <option>Completed</option>
+        </select>
+
+        <button type="submit" class="button">Add Booking</button>
+      </form>
+
+      <p id="successMessage"></p>
     </div>
   </main>
 
@@ -39,5 +53,6 @@
       <p>&copy; 2026 StayEase Rentals</p>
     </div>
   </footer>
+  <script src="js/create.js"></script>
 </body>
 </html>
