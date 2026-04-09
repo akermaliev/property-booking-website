@@ -145,16 +145,45 @@ h3 {
 
 .button {
   display: inline-block;
-  background-color: #0f172a;
-  color: #e2e8f0;
+  padding: 10px;
+  border: none;
+  border-radius: 6px;
+  background-color: #3aaed8;
+  color: white;
+  cursor: pointer;
   text-decoration: none;
-  padding: 8px 14px;
-  border-radius: 8px;
 }
 
 .button:hover {
-  background-color: #1e293b;
-  color: #ffffff;
+  background-color: #2d8bb3;
+}
+
+.button.danger {
+  background-color: #e74c3c;
+}
+
+.button.danger:hover {
+  background-color: #c0392b;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  margin-top: 20px;
+}
+
+.form input,
+.form select {
+  padding: 10px;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+}
+
+.warning {
+  margin-top: 15px;
+  color: #a94442;
+  font-size: 0.9rem;
 }
 
 .hero-image {

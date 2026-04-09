@@ -31,6 +31,25 @@
         This page will support editing existing booking records, such as changing dates,
         pricing details, property information, or reservation status.
       </p>
+
+      <h3>Edit Booking (Simulation)</h3>
+
+      <form class="form">
+        <input type="text" placeholder="Booking ID (e.g., BKG-1001)" required>
+        <input type="text" placeholder="Property Name">
+        <input type="text" placeholder="Location">
+        <input type="number" placeholder="Price per Night">
+        <input type="date">
+
+        <select>
+          <option>Confirmed</option>
+          <option>Pending</option>
+          <option>Completed</option>
+          <option>Cancelled</option>
+        </select>
+
+        <button type="submit" class="button">Update Booking</button>
+      </form>
     </div>
   </main>
 
@@ -39,5 +58,11 @@
       <p>&copy; 2026 StayEase Rentals</p>
     </div>
   </footer>
+  <script>
+    document.querySelector(".form").addEventListener("submit", function (e) {
+      e.preventDefault();
+      alert("Update functionality is simulated in this demo. In a full system, this would modify an existing booking record.");
+    });
+  </script>
 </body>
 </html>

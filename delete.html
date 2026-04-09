@@ -31,6 +31,18 @@
         This area will be used to remove booking records safely while keeping data operations
         clear and controlled for administrators.
       </p>
+
+      <h3>Remove Booking (Simulation)</h3>
+
+      <form class="form">
+        <input type="text" placeholder="Enter Booking ID to delete (e.g., BKG-1001)" required>
+        <button type="submit" class="button danger">Delete Booking</button>
+      </form>
+
+      <p class="warning">
+        Deleting a booking is irreversible. In a real system, this action would permanently remove
+        the record from the database.
+      </p>
     </div>
   </main>
 
@@ -39,5 +51,11 @@
       <p>&copy; 2026 StayEase Rentals</p>
     </div>
   </footer>
+  <script>
+    document.querySelector(".form").addEventListener("submit", function (e) {
+      e.preventDefault();
+      alert("Delete functionality is simulated. In a real application, this would remove the booking from the system.");
+    });
+  </script>
 </body>
 </html>
