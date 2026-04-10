@@ -39,3 +39,7 @@ Relationships:
 - Botpress  
 
 ## 📂 Project Structure
+- css/ → styles  
+- js/ → scripts  
+- images/ → assets  
+- *.html → website pages  
