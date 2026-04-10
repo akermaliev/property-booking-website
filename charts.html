@@ -6,7 +6,7 @@
   <title>Charts | Property Booking System</title>
   <link rel="stylesheet" href="css/styles.css">
 </head>
-<body>
+<body class="charts-page">
   <header>
     <nav class="navbar" aria-label="Primary Navigation">
       <div class="container">
@@ -36,15 +36,21 @@
 
       <div class="dashboard">
         <div class="chart-full">
-          <canvas id="revenueChart"></canvas>
+          <div class="chart-wrapper">
+            <canvas id="revenueChart"></canvas>
+          </div>
         </div>
 
         <div class="chart-half">
-          <canvas id="propertyChart"></canvas>
+          <div class="chart-wrapper">
+            <canvas id="propertyChart"></canvas>
+          </div>
         </div>
 
         <div class="chart-half pie-container">
-          <canvas id="statusChart"></canvas>
+          <div class="chart-wrapper">
+            <canvas id="statusChart"></canvas>
+          </div>
         </div>
       </div>
     </div>

@@ -30,8 +30,7 @@ const revenueChart = new Chart(document.getElementById("revenueChart"), {
   },
   options: {
     responsive: true,
-    maintainAspectRatio: true,
-    aspectRatio: 2.5
+    maintainAspectRatio: false
   }
 });
 
@@ -47,7 +46,7 @@ const propertyChart = new Chart(document.getElementById("propertyChart"), {
   },
   options: {
     responsive: true,
-    maintainAspectRatio: true
+    maintainAspectRatio: false
   }
 });
 
@@ -63,7 +62,7 @@ const statusChart = new Chart(document.getElementById("statusChart"), {
   },
   options: {
     responsive: true,
-    maintainAspectRatio: true
+    maintainAspectRatio: false
   }
 });
 
