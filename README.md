@@ -3,8 +3,8 @@
 Static web application prototype for a property booking system developed as part of ISM 6225 – Application Development for Analytics.
 
 ## 🔗 Live Demo
-- Website: http://myweb.usf.edu/~akermaliev/index.html  
-- Chatbot: http://myweb.usf.edu/~akermaliev/mybot.html  
+- Website: http://myweb.usf.edu/~akermaliev/property_booking/index.html 
+- Chatbot: http://myweb.usf.edu/~akermaliev/property_booking/mybot.html
 
 ## 📌 Features
 - Multi-page website with consistent layout and navigation
